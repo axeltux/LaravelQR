@@ -5,3 +5,15 @@
 ## Instalar el paquete:
 
 # composer require simplesoftwareio/simple-qrcode
+
+//config/app.php
+
+'providers' => [
+ ….
+ SimpleSoftwareIO\QrCode\QrCodeServiceProvider::class
+ ],
+
+'aliases' => [
+ ….
+ 'QrCode' => SimpleSoftwareIO\QrCode\Facades\QrCode::class
+ ],
